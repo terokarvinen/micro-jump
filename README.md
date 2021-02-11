@@ -46,7 +46,7 @@ Ant, Asm, Asp, Awk, Basic, BETA, C, C++, C#, Cobol, DosBatch, Eiffel, Erlang, Fl
 
 Markdown configuration is in examples/ctags. 
 
-	$ cp $HOME/.config/micro/plug/micro-jump/examples/ctags $HOME/.ctags
+	$ cp -nv $HOME/.config/micro/plug/micro-jump/examples/ctags $HOME/.ctags
 
 To test it, write some Markdown.
 
