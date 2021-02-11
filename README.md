@@ -9,16 +9,44 @@ Prerequisites. Ctags extracts headings, functions and classes. Fzf shows the int
 	$ sudo apt-get update
 	$ sudo apt-get -y install fzf ctags git
 
-The plugin
+The plugin. If you have never ran micro before, start 'micro' and quit it with Ctrl-Q to create configuration files. 
 
-	$ cd $HOME/.micro/plug/
+	$ mkdir $HOME/.config/micro/plug/
+	$ cd $HOME/.config/micro/plug/
 	$ git clone https://github.com/terokarvinen/micro-jump
+	$ cd
 
 ## Use F4 to Jump
 
-	$ micro tero.md
+	$ micro tero.py
 
-Write some Markdown. Jump also supports Go, Python, C...
+Write some Python. Jump also supports Go, C, JavaScript...
+
+```python
+def hello():
+    print("hello")
+
+def bar():
+    print("bar")
+
+def foo():
+    print("foo")
+```
+
+Press F4. Use up and down arrows to select a function. You can also type part of the name. Press enter to jump.
+
+## Language support
+
+Probably whatever ctags supports. My 'ctags --list-languages' has 44 entries: 
+Ant, Asm, Asp, Awk, Basic, BETA, C, C++, C#, Cobol, DosBatch, Eiffel, Erlang, Flex, Fortran, Go, HTML, Java, JavaScript, Lisp, Lua, Make, MatLab, ObjectiveC, OCaml, Pascal, Perl, PHP, Python, REXX, Ruby, Scheme, Sh, SLang, SML, SQL, Tcl, Tex, Vera, Verilog, VHDL, Vim, YACC, markdown. 
+
+## MarkDown Support
+
+Markdown configuration is in examples/ctags. 
+
+	$ cp $HOME/.config/micro/plug/micro-jump/examples/ctags $HOME/.ctags
+
+To test it, write some Markdown.
 
 ```markdown
 # Hello
@@ -30,12 +58,7 @@ Hello Tero
 More text
 ```
 
-Press F4. Use up and down arrows to select heading "Hello" or "Foo". You can also type part of the name. 
+Press F4 to jump. You can see your table of contents, and select between the headings "Hello" and "Foo". 
 
-## Language support
-
-Probably whatever ctags supports. My 'ctags --list-languages' has 44 entries: 
-Ant, Asm, Asp, Awk, Basic, BETA, C, C++, C#, Cobol, DosBatch, Eiffel, Erlang, Flex, Fortran, Go, HTML, Java, JavaScript, Lisp, Lua, Make, MatLab, ObjectiveC, OCaml, Pascal, Perl, PHP, Python, REXX, Ruby, Scheme, Sh, SLang, SML, SQL, Tcl, Tex, Vera, Verilog, VHDL, Vim, YACC, markdown. 
-
-Copyright 2020-2021 Tero Karvinen http://TeroKarvinen.com
+Copyright 2020-2021 Tero Karvinen https://TeroKarvinen.com
 Code repository https://github.com/terokarvinen/micro-jump
