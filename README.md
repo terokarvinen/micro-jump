@@ -33,7 +33,9 @@ def foo():
     print("foo")
 ```
 
-Press F4. Use up and down arrows to select a function. You can also type part of the name. Press enter to jump.
+Ctrl-S Save. 
+
+Press F4 to jump. Use up and down arrows to select a function. You can also type part of the name. Press enter to jump.
 
 ## Language support
 
@@ -59,6 +61,8 @@ Hello Tero
 
 More text
 ```
+
+Ctrl-S Save. 
 
 Press F4 to jump. You can see your table of contents, and select between the headings "Hello" and "Foo". 
 
