@@ -6,6 +6,7 @@
   "Versions": [
     {
       "Version": "0.0.2",
+      "Url": "https://github.com/terokarvinen/micro-jump/archive/v0.0.2.zip",
       "Require": {
         "micro": ">=2.0.0"
       }
