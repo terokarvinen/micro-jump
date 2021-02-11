@@ -4,7 +4,7 @@ Jump to any function, class or heading with F4. Go, Markdown, Python, C... A plu
 
 ## Install
 
-Prerequisites. Ctags extracts headings, functions and classes. Fzf shows the interactive fuzzy find to choose where to jump.
+Prerequisites. Ctags extracts headings, functions and classes. Fzf shows the interactive fuzzy find to choose where to jump. These instructions have been tested with Ubuntu 20.04 and Debian 10 Buster. For older Linuxes, you might need to install fzf from source. 
 
 	$ sudo apt-get update
 	$ sudo apt-get -y install fzf ctags git
@@ -48,6 +48,8 @@ Markdown configuration is in examples/ctags.
 
 To test it, write some Markdown.
 
+	$ micro book.md
+
 ```markdown
 # Hello
 
@@ -59,6 +61,8 @@ More text
 ```
 
 Press F4 to jump. You can see your table of contents, and select between the headings "Hello" and "Foo". 
+
+Well done, you have now installed micro-jump and Markdown support. 
 
 Copyright 2020-2021 Tero Karvinen https://TeroKarvinen.com
 Code repository https://github.com/terokarvinen/micro-jump
