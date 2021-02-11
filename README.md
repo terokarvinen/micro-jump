@@ -14,7 +14,7 @@ The plugin
 	$ cd $HOME/.micro/plug/
 	$ git clone https://github.com/terokarvinen/micro-jump
 
-Usage
+## Use F4 to Jump
 
 	$ micro tero.md
 
@@ -37,6 +37,5 @@ Press F4. Use up and down arrows to select heading "Hello" or "Foo". You can als
 Probably whatever ctags supports. My 'ctags --list-languages' has 44 entries: 
 Ant, Asm, Asp, Awk, Basic, BETA, C, C++, C#, Cobol, DosBatch, Eiffel, Erlang, Flex, Fortran, Go, HTML, Java, JavaScript, Lisp, Lua, Make, MatLab, ObjectiveC, OCaml, Pascal, Perl, PHP, Python, REXX, Ruby, Scheme, Sh, SLang, SML, SQL, Tcl, Tex, Vera, Verilog, VHDL, Vim, YACC, markdown. 
 
-Tero Karvinen http://TeroKarvinen.com
-
-https://github.com/terokarvinen/micro-jump
+Copyright 2020-2021 Tero Karvinen http://TeroKarvinen.com
+Code repository https://github.com/terokarvinen/micro-jump
