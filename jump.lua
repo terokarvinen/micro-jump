@@ -11,7 +11,7 @@ function init()
 end
 
 function jumptagCommand(bp) -- bp BufPane
-		local filename = bp.Buf.GetName(bp.Buf)
+		local filename = bp.Buf.Path
 		local cmd = string.format("bash -c \"ctags -f - --fields=n '%s'|fzf|tr ':' '\n'|tail -1\"", filename)
 		local out = shell.RunInteractiveShell(cmd, false, true)
 		local linenum = tonumber(out)-1
