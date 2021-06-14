@@ -70,3 +70,4 @@ Well done, you have now installed micro-jump and Markdown support.
 
 Copyright 2020-2021 Tero Karvinen https://TeroKarvinen.com
 Code repository https://github.com/terokarvinen/micro-jump
+MIT license
