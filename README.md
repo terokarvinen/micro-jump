@@ -1,4 +1,4 @@
-# micro-jump - Jump to function in micro editor
+# micro-jump - Jump to function
 
 Jump to any function, class or heading with F4. Go, Markdown, Python, C... A plugin for micro editor. 
 
