@@ -19,9 +19,32 @@ In some Ubuntu versions, ctags package name is different and the command is 'sud
 
 	$ micro --plugin install jump
 
-Now try it out. Write a Python file "tero.py" with a couple of functions, ctrl-S to save and F4 to jump. 
+Now try it out!
 
-## F4 to Jump 
+## Use F4 to Jump
+
+	$ micro tero.py
+
+Write some Python. Jump also supports Go, C, JavaScript...
+
+```python
+def hello():
+    print("hello")
+
+def bar():
+    print("bar")
+
+def foo():
+    print("foo")
+```
+
+Ctrl-S Save. 
+
+Press F4 to jump. Use up and down arrows to select a function. You can also type part of the name. Press enter to jump.
+
+Your cursor now landed on the function. Well done!
+
+## Modifying the Jump Key
 
 The default key binding F4 works automatically, and you only need to modify bindings if you want to change it. Key bindings can be changed in $HOME/.config/micro/bindings.json
 
@@ -52,6 +75,10 @@ More text
 Ctrl-S Save. 
 
 Press F4 to jump. You can see your table of contents, and select between the headings "Hello" and "Foo". 
+
+As Jump shows MarkDown headings in document order, it also provides you an interactive table of contents. 
+
+Go write that book!
 
 ## See also
 
