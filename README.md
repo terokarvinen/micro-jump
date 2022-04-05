@@ -2,6 +2,8 @@
 
 Jump to any function, class or heading with F4. Go, Markdown, Python, C... A plugin for micro editor. 
 
+![Screenshot - Jump to a function with F4 - Jump plugin for Micro](img/jump-to-function-F4-micro-editor-karvinen-screenshot.png)
+
 ## Supports 40+ languages
 
 Jump supports all languages supported by your ctags. My 'ctags --list-languages' has 44 entries: Ant, Asm, Asp, Awk, Basic, BETA, C, C++, C#, Cobol, DosBatch, Eiffel, Erlang, Flex, Fortran, Go, HTML, Java, JavaScript, Lisp, Lua, Make, MatLab, ObjectiveC, OCaml, Pascal, Perl, PHP, Python, REXX, Ruby, Scheme, Sh, SLang, SML, SQL, Tcl, Tex, Vera, Verilog, VHDL, Vim, YACC, markdown.
