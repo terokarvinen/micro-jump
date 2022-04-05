@@ -54,7 +54,7 @@ Default binding is
 
 ## Markdown Support
 
-Markdown configuration is in examples/ctags/. 
+Markdown configuration is in examples/ctags. 
 
 	$ cp -nv $HOME/.config/micro/plug/micro-jump/examples/ctags $HOME/.ctags
 
