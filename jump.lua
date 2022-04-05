@@ -10,6 +10,7 @@ local micro = import("micro")
 function init()
 	config.MakeCommand("jumptag", jumptagCommand, config.NoComplete)
 	config.TryBindKey("F4", "command:jumptag", true)
+	config.AddRuntimeFile("jump", config.RTHelp, "help/jump.md")
 end
 
 function jumptagCommand(bp) -- bp BufPane
