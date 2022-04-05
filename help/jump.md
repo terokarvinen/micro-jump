@@ -15,7 +15,7 @@ Install prerequisites. Jump requires fzf, ctags and bash. On Debian 11-Bullseye,
 	$ sudo apt-get update
 	$ sudo apt-get install micro fzf exuberant-ctags
 
-In some Ubuntu versions, ctags package name is different and the command is 'sudo apt-get install micro fzf exuberant-ctags'. For other Linuxes, just install the packages that provide commands 'fzf', 'ctags' and 'bash'. Micro jump has not been tested on Windows or Mac OSX. 
+In some Ubuntu versions, ctags package name is different and the command is 'sudo apt-get install micro fzf ctags'. For other Linuxes, just install the packages that provide commands 'fzf', 'ctags' and 'bash'. Micro jump has not been tested on Windows or Mac OSX. 
 
 	$ micro --plugin install jump
 
