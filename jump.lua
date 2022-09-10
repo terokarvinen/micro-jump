@@ -1,5 +1,5 @@
 -- jumptag - Jump to any function, class or heading with F4. Go, Python, C...
--- Copyright 2020-2021 Tero Karvinen http://TeroKarvinen.com
+-- Copyright 2020-2022 Tero Karvinen http://TeroKarvinen.com
 -- https://github.com/terokarvinen/micro-jump
 -- MIT license
 
@@ -15,7 +15,8 @@ end
 
 function jumptagCommand(bp) -- bp BufPane
 		local filename = bp.Buf.Path
-		local cmd = string.format("bash -c \"ctags -f - --fields=n '%s'|fzf --layout=reverse|tr ':' '\n'|tail -1\"", filename)
+		local cmd = string.format("bash -c \"ctags -f - --sort=no --fields=n '%s'|fzf --layout=reverse|tr ':' '\n'|tail -1\"", filename)
+		-- --sort=no shows symbols in file order, creating a TOC for Markdown files
 		local out = shell.RunInteractiveShell(cmd, false, true)
 		if tonumber(out) == nil then
 			micro.InfoBar():Message("Jump cancelled.")
