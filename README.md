@@ -18,6 +18,8 @@ On Debian
 
 For other distributions and operating systems, see [help/jump.md](help/jump.md). 
 
+Micro-jump is probably easy to install on most Linuxes. It's not known to work on Windows. 
+
 ## Use F4 to Jump
 
 	$ micro tero.py
