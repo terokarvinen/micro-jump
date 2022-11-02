@@ -45,6 +45,10 @@ Press F4 to jump. Use up and down arrows to select a function. You can also type
 
 Writing books, are we? Markdown support & interactive table of contents are explained in [help/jump.md](help/jump.md). 
 
+## See also
+
+[micro-run](https://github.com/terokarvinen/micro-run) Press F5 to save and run the current file, F12 to make, F9 to make in background
+
 Copyright 2020-2022 Tero Karvinen https://TeroKarvinen.com
 Code repository https://github.com/terokarvinen/micro-jump
 MIT license
