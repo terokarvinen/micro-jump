@@ -22,7 +22,7 @@ function jumptagCommand(bp) -- bp BufPane
 			micro.InfoBar():Message("Jump cancelled.")
 			return
 		end
-		local linenum = tonumber(out)-1
-		bp.Cursor.Y = linenum
-		micro.InfoBar():Message(string.format("Jumped to line ", linenum))
+		local linenum = tonumber(out)
+		bp.Cursor.Y = linenum-1
+		micro.InfoBar():Message("Jumped to line ", linenum)
 end
